@@ -1,0 +1,27 @@
+<! DOCTYPE html>
+<html>
+<head>
+<body bgcolor="black">
+<font color="white">
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/themes/base/jquery-ui.css" type="text/css" media="all" />
+<script type="text/javascript" src=https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js></script>
+<script type="text/javascript" src=https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.min.js></script></script>
+</head>
+<body>
+<center>
+
+<br><br><br>
+<span id="current_volume" style="vertical-align:middle">{{ current_volume }}</span>
+<div id="slider" style="width: 50%"></div>
+<script>
+    $( "#slider" ).slider({
+        value : {{ current_volume }},
+        slide : function(e,ui) {
+            $.get('set/'+ui.value+'/', function(data) {
+              $('#current_volume').text(data);
+            });
+        },
+    });
+</script>
+</body>
+</html>
