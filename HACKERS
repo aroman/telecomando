@@ -1,0 +1,9 @@
+If you're interested in working on this project, read this, please.
+
+As of now, this is all Python. So follow PEP8 to the best of your ability.
+
+Document as much as possible. It can't hurt.
+
+Code-refactor-only patches are always weclome -- don't hesitiate to branch with just a better way of doing something or code cleanup.
+
+

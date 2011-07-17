@@ -1,0 +1,8 @@
+Telecomando is a set of webapps that serve as "remote controls" for your Linux-powered boxes.
+Mobile (i.e iOS & Android) are the major targets.
+
+Currently, there's just one such webapp: Sonoro. It's basically a volume slider powered via a micro-library in Python, using Django to serve it up and AJAX/jQuery on the frontend to power the UI.
+
+I'm not a designer, so it's really, really, really bad. It uses Django's template language, so if you're interested in giving telecomando some clothes, please feel free to :)
+
+
